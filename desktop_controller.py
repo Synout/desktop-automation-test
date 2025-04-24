@@ -204,6 +204,11 @@ class NotepadTestHelperFuncs:
         self.save_notepad(filename)
 
     def save_notepad(self, filename):
+        # Check if the directory Desktop\tjm-project exists, if not create it
+        desktop_path = Path.home() / "Desktop" / "tjm-project"
+        if not desktop_path.exists():
+            self.logger.info(f"Directory {desktop_path} does not exist. Creating it.")
+            desktop_path.mkdir(parents=True, exist_ok=True)
         self.logger.info(f"Saving file {filename}")
         self.type_keys(['ctrl', 'shift', 's'])
         self.sleep(0.5)
@@ -216,8 +221,8 @@ class NotepadTestHelperFuncs:
             x, y = self.get_centered_coords(el)
             self.click_at(x=x, y=y)
             # type the path `Desktop`
-            self.kb_type('Desktop', 0.1)
-            self.tab()
+            self.kb_type(str(desktop_path), 0.1)
+            self.press('enter')
             self.sleep(0.5)
             self.type_keys(['alt', 's'])
         else:
