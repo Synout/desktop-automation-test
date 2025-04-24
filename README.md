@@ -1,12 +1,12 @@
-# Desktop Data Entry Automation
+# Desktop Data Entry Automation [WIP]
 
 This project is a simple demonstration of Windows automation using `pyautogui` and `botcity`. It automates desktop data entry tasks to showcase the capabilities of these tools.
 
 ## Features
 
-- Automates repetitive desktop tasks.
-- Uses `pyautogui` for GUI automation.
-- Integrates with `botcity` for enhanced automation capabilities.
+- Simulates adding text to notepad
+- Created a class that uses pyautogui for the automation and botcity, just for contrast.
+- 
 
 ## Limitations
 
@@ -16,9 +16,8 @@ This project is a simple demonstration of Windows automation using `pyautogui` a
 
 ## Requirements
 
-- Python 3.7 or higher
-- `pyautogui` library
-- `botcity-framework-core` library
+- Python 3.10 or higher
+- `pyautogui` and `botcity-framework-core` library
 
 ## Installation
 
@@ -37,20 +36,8 @@ This project is a simple demonstration of Windows automation using `pyautogui` a
 
 1. Run the script:
     ```bash
-    python main.py
+    python notepad-auto.py
     ```
 
 2. Follow the on-screen instructions to observe the automation in action.
 
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- [PyAutoGUI Documentation](https://pyautogui.readthedocs.io/)
-- [BotCity Documentation](https://botcity.dev/)
