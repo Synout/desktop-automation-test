@@ -5,18 +5,19 @@ This project is a simple demonstration of Windows automation using `pyautogui` a
 ## Features
 
 - Simulates adding text to notepad
-- Created a class that uses pyautogui for the automation and botcity, just for contrast.
-- 
+- Created two classes that use pyautogui and botcity, just for contrast.
+- Script will read json palceholder content and save to text files on desktop
 
 ## Limitations
 
 - The computer cannot be used while the automation is running, as it directly interacts with the GUI.
 - The automation is unaware if the target window loses focus, which may cause unexpected behavior.
+- The automation may require an update of the resource files if the Windows theme or dpi is different.
 - Further improvements and tweaking are required for more robust and reliable automation.
 
 ## Requirements
 
-- Python 3.10 or higher
+- Python 3.13 or higher
 - `pyautogui` and `botcity-framework-core` library
 
 ## Installation
