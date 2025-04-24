@@ -25,7 +25,7 @@ This project is a simple demonstration of Windows automation using `pyautogui` a
 1. Clone the repository:
     ```bash
     git clone https://github.com/Synout/desktop-automation-test.git
-    cd desktop-data-entry
+    cd desktop-automation-test
     ```
 
 2. Install dependencies:
